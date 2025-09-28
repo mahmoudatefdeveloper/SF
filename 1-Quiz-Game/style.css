@@ -1,0 +1,43 @@
+/* basic reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #f5efe6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  background-color: offwhite;
+  border-radius: 1rem;
+  box-shadow: 0 10 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.screen {
+  display: none;
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* display the active screen only, it must has active class */
+.screen.active {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+ 
+/* Start Screen */
+
